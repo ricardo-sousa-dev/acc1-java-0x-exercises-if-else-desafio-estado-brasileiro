@@ -9,7 +9,7 @@ public class EstadosBrasileiros {
    */
   public static void main(String[] args) {
     // Sorteia uma UF.
-    String[] siglas = {"CE", "SC", "AM"};
+    String[] siglas = { "CE", "SC", "AM" };
     int pos = new Random().nextInt(siglas.length);
 
     // Mostra o nome do estado.
@@ -17,7 +17,16 @@ public class EstadosBrasileiros {
   }
 
   static void mostraNomeEstado(String uf) {
-    // Seu código aqui
+    if (uf == "CE") {
+      System.out.println("CEARA");
+    } else if (uf == "SC") {
+      System.out.println("SANTA CATARINA");
+    } else if (uf == "AM") {
+      System.out.println("AMAZONAS");
+    } else {
+      System.out.println("Estado não encontrado");
+    }
+
   }
 
   // Chame a função escrevendo `imprime()`.
